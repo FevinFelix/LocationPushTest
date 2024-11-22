@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BCF33FCA2CD48E3100F242B0 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = BCF33FC92CD48E3100F242B0 /* FirebaseCore */; };
+		BCF33FCC2CD48E3100F242B0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BCF33FCB2CD48E3100F242B0 /* FirebaseFirestore */; };
+		BCF33FD12CD497C000F242B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF33FD02CD497C000F242B0 /* GoogleService-Info.plist */; };
+		BCF33FD22CD497C000F242B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF33FD02CD497C000F242B0 /* GoogleService-Info.plist */; };
+		BCF33FD32CD497C000F242B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCF33FD02CD497C000F242B0 /* GoogleService-Info.plist */; };
+		BCF33FD52CD497EE00F242B0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = BCF33FD42CD497EE00F242B0 /* FirebaseAnalytics */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BC1051692CD4872E00D50CA0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +36,25 @@
 		BC1051582CD4872C00D50CA0 /* LocationPushTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationPushTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1051682CD4872E00D50CA0 /* LocationPushTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationPushTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC1051722CD4872E00D50CA0 /* LocationPushTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationPushTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCF33FD02CD497C000F242B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BC8441AA2CD57AE1001CB5B6 /* Exceptions for "LocationPushTest" folder in "LocationPushTest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BC1051572CD4872C00D50CA0 /* LocationPushTest */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BC10515A2CD4872C00D50CA0 /* LocationPushTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BC8441AA2CD57AE1001CB5B6 /* Exceptions for "LocationPushTest" folder in "LocationPushTest" target */,
+			);
 			path = LocationPushTest;
 			sourceTree = "<group>";
 		};
@@ -52,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF33FCA2CD48E3100F242B0 /* FirebaseCore in Frameworks */,
+				BCF33FCC2CD48E3100F242B0 /* FirebaseFirestore in Frameworks */,
+				BCF33FD52CD497EE00F242B0 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +104,9 @@
 				BC10515A2CD4872C00D50CA0 /* LocationPushTest */,
 				BC10516B2CD4872E00D50CA0 /* LocationPushTestTests */,
 				BC1051752CD4872E00D50CA0 /* LocationPushTestUITests */,
+				BCF33FC72CD48D4400F242B0 /* Frameworks */,
 				BC1051592CD4872C00D50CA0 /* Products */,
+				BCF33FD02CD497C000F242B0 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +118,13 @@
 				BC1051722CD4872E00D50CA0 /* LocationPushTestUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BCF33FC72CD48D4400F242B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +147,9 @@
 			);
 			name = LocationPushTest;
 			packageProductDependencies = (
+				BCF33FC92CD48E3100F242B0 /* FirebaseCore */,
+				BCF33FCB2CD48E3100F242B0 /* FirebaseFirestore */,
+				BCF33FD42CD497EE00F242B0 /* FirebaseAnalytics */,
 			);
 			productName = LocationPushTest;
 			productReference = BC1051582CD4872C00D50CA0 /* LocationPushTest.app */;
@@ -195,6 +233,9 @@
 			);
 			mainGroup = BC10514F2CD4872C00D50CA0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BCF33FC82CD48E3100F242B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BC1051592CD4872C00D50CA0 /* Products */;
 			projectDirPath = "";
@@ -212,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF33FD12CD497C000F242B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF33FD22CD497C000F242B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF33FD32CD497C000F242B0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,16 +443,23 @@
 				DEVELOPMENT_TEAM = FSJMDLW98D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationPushTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = test.LocationPushTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -428,16 +479,23 @@
 				DEVELOPMENT_TEAM = FSJMDLW98D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationPushTest/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = test.LocationPushTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -558,6 +616,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BCF33FC82CD48E3100F242B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BCF33FC92CD48E3100F242B0 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCF33FC82CD48E3100F242B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		BCF33FCB2CD48E3100F242B0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCF33FC82CD48E3100F242B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BCF33FD42CD497EE00F242B0 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCF33FC82CD48E3100F242B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC1051502CD4872C00D50CA0 /* Project object */;
 }
